@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaqueries.css"> 
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Gao Rui's blog</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Gao Rui</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="Gao Rui profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Gao Rui</h1>
+            <p class="section__text__p2">MS student at UCLA</p> 
+            <p class="section__text__p3">My name is Gao Rui, you can call me Rui (Ray). I'm currently a first year MS student in <a href="https://www.ee.ucla.edu/">Electrical and Computer Engineering at UCLA</a>.
+            <br> This blog is also a Html/css work from myself. I'm trying to find labs or work at current stage.</br></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv_RuiGao.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My Linkedin Profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/rwigle/'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="My github Profile"
+                class="icon" 
+                onclick="location.href='https://github.com/Rwigie'"
+                />
+                <img 
+                src="./assets/email.png" 
+                alt="My github Profile"
+                class="cursor email-icon-profile" 
+                onclick="location.href='mailto:rgao727@gmail.com'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./assets/about-pic.png" 
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    
+                    <div class="details-container">
+                        <img 
+                        src="./assets/ucla.png" alt="ucla icon"
+                        class="icon"
+                        />
+                        <h3>University of California, Los Angeles</h3>
+                        <p>2024 - Present <br />MS, Electrical and Computer Engineering<p> 
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/Fudan.png" alt="fudan icon"
+                        class="icon"
+                        />
+                        <h4>Fudan University</h2>
+                        <p>2020 - 2024 <br />BS, Biomedical Engineering<p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="details-paragraph">Prior to UCLA, I started my undergraduate study at Fudan University, Shanghai in 2020, and spent 4 years at the School of Information and technology majoring in biomedical engineering and electrical engineering. During that time, I gained valuable experience in physiological signal classification and prediction under <a href="https://ieeexplore.ieee.org/author/37090017335">Prof. Yu Ma</a> and <a href="https://scholar.google.com/citations?user=g8vxMNMAAAAJ&hl=zh-CN">Prof. Cuiwei Yang</a> at <a href="https://istbi.fudan.edu.cn/">Fudan Biomedical Center</a>. It left me a solid foundation on data structure and modern techniques in signal processing. <br>My interest lies in signal processing and artificial intelligence, especially its utilization in signal processing and task prediction. I also have a keen interest in computer science, where I have taken foundational courses such as data structures and computer architecture to deepen my understanding and broaden my technical skills. </br></p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Work or Research Experience</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/cambridge-small.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>AFAR Lab, Cambridge</h3>
+                    <p>Research Assistant</p>
+                    <p>2023 Jun - 2024 Feb
+                    <p>Advisor: Prof. Hatice Gunes <br>Dr Batuhan Sayis</p> 
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/ucb.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>ECog Processing, UCB</h3>
+                    <p>Research Intern</p>
+                    <p>Feb 2023 - May 2023</p>
+                    <p>Advisor: PhD Runfeng Miao</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/Fudan.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>BioMed Center, Fudan</h3>
+                    <p>Research Assistant</p>
+                    <p>Feb 2023 - May 2023</p>
+                    <p>Advisor: Prof.Cuiwei Yang</p>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Core Courese</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div class="article-details">
+                    <h3>Digital Signal Processing</h3>
+                    <p>Grade: A</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div class="article-details">
+                    <h3>Data Struc and Algorithm</h3>
+                    <p>Grade: A</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div class="article-details">
+                    <h3>Computer Architecture</h3>
+                    <p>Grade: A</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3 class="article-details">Signal and System </h3>
+                    <p>Grade:A</p>
+                  </div>
+                </article>
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3 class="article-details">Machine
+                        Learning</h3>
+                      <p>Grade:A</p>
+                    </div>
+                  </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/learning-paper.png"
+                    alt="Project 1";
+                    class="project-img"
+                    
+                  />
+                
+                </div>
+                <h2 class="experience-sub-title project-title">Affective Intelligence and Robotics Laboratory (AFAR) </h2>
+                
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://www.repository.cam.ac.uk/items/b646d10c-b404-48bc-b7a3-7f777d610cdf'"
+                  >
+                    Link
+                  </button>
+                  
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/Matlab.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Matlab Processing ECG Signal</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Rwigie/Matlab-ECG-signal-Processing-Common-filter-and-feature-'"
+                  >
+                    Github
+                  </button>
+                <!--
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                -->
+                </div>
+              </div>
+              <!--
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-3.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                
+                </div>
+            -->
+              </div>
+            </div>
+          </div>
+        <img 
+        src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:rgao727@ucla.edu">rgao727@ucla.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linken.com">LinkedIn</a></p>
+            </div>
+        </div> 
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    <p>Copyright &#169; 2024 Gao Rui. All Rights Reserved </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
