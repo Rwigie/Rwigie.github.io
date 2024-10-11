@@ -95,7 +95,7 @@
       font-size: 1.25rem;
     }
     .section__text__p3 {
-      text-align: center;
+      text-align: justify;
     }
     .title {
       font-size: 2rem;
@@ -104,7 +104,7 @@
       text-align: justify;
     }
     .details-paragraph {
-      text-align: center;
+      text-align: justify;
     }
   }
     
