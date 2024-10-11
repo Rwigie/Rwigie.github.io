@@ -96,6 +96,7 @@
     }
     .section__text__p3 {
       text-align: justify;
+      text-align-last: center;
     }
     .title {
       font-size: 2rem;
@@ -105,6 +106,7 @@
     }
     .details-paragraph {
       text-align: justify;
+      text-align-last: center;
     }
   }
     
