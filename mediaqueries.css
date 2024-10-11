@@ -94,11 +94,18 @@
     .section__text__p2 {
       font-size: 1.25rem;
     }
+    .section__text__p3 {
+      text-align: center;
+    }
     .title {
       font-size: 2rem;
     }
     .text-container {
       text-align: justify;
     }
+    .details-paragraph {
+      text-align: center;
+    }
   }
+    
   
