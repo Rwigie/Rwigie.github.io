@@ -30,7 +30,8 @@ body > nav { justify-content: space-between; min-height: 100px; gap: 24px; }
 #profile { display: grid; grid-template-columns: 260px minmax(0, 1fr); align-items: center; gap: 56px; }
 #profile .section__pic-container { width: 260px; }
 .profile-photo { display: block; width: 100%; height: auto; border-radius: 20px; }
-#profile .title { font-size: 2.6rem; margin-bottom: 8px; }
+#profile .title { font-size: 2.6rem; font-weight: 400; margin-bottom: 8px; }
+#profile .title strong { font-weight: 600; }
 .section__text__p2 { font-size: 1.25rem; font-weight: 500; margin-bottom: 20px; }
 .section__text__p3 { margin-bottom: 24px; text-align: left; }
 .btn-container, #socials-container { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
