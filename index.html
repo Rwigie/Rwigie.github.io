@@ -1,14 +1,13 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="mediaqueries.css"> 
+    <title>Gao Rui | CS PhD Student at HKUST</title>
+    <meta name="description" content="Gao Rui is a first-year PhD student in Computer Science at HKUST, advised by Prof. Hao Chen. His research focuses on agentic AI for scientific discovery.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav id="desktop-nav">
@@ -16,9 +15,9 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Recent Work</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,88 +31,110 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Recent Work</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Gao Rui profile picture">
+            <img src="./assets/rui.png" alt="Portrait of Gao Rui" class="profile-photo">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Gao Rui</h1>
-            <p class="section__text__p2">MS student at UCLA</p> 
-            <p class="section__text__p3">My name is Gao Rui, you can call me Rui (Ray). I'm currently a first year MS student in <a href="https://www.ee.ucla.edu/">Electrical and Computer Engineering at UCLA</a>. I live now in Los Angeles.
-            <br> This blog is also a Html/css work from myself. I'm now working as a research assistant in the UCLA HCI Lab supervised by 
-            <a href="https://samueli.ucla.edu/people/xiang-anthony-chen/" target="_blank">Prof. Xiang Anthony Chen </a>
-            and <a href="https://sites.google.com/view/youngseung-jeon" target="_blank">Dr. Youngseung Jeon </a>, working on molecule generation with LLM and Reinforcement learning. I'm trying to find potention work and phd at current stage.</br></p>
+            <p class="section__text__p2">CS PhD Student at HKUST</p>
+            <p class="section__text__p3">My name is Gao Rui, and you can call me Rui (Ray). I am a first-year PhD student at the Hong Kong University of Science and Technology (HKUST). I am a member of <a href="https://hkustsmartlab.github.io/" target="_blank" rel="noopener noreferrer">SmartX Lab</a>, advised by <a href="https://cse.hkust.edu.hk/~jhc/" target="_blank" rel="noopener noreferrer">Prof. Hao Chen</a>.
+            <br><br>Previously, I received my BS from Fudan University and my MS from UCLA. At UCLA, I conducted research in the HCI Lab under the supervision of <a href="https://samueli.ucla.edu/people/xiang-anthony-chen/" target="_blank" rel="noopener noreferrer">Prof. Xiang Anthony Chen</a> and <a href="https://sites.google.com/view/youngseung-jeon" target="_blank" rel="noopener noreferrer">Dr. Youngseung Jeon</a>.
+            <br><br>My current research centers on <strong>agentic AI for scientific discovery</strong>. I am also interested in AI for Science, vision-language models (VLMs), and reinforcement learning for large language models (LLMs).</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/cv_RuiGao.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
                 </button>
             </div>
             <div id="socials-container">
-                <img 
-                src="./assets/linkedin.png" 
+                <img
+                src="./assets/linkedin.png"
                 alt="My Linkedin Profile"
-                class="icon" 
+                class="icon"
                 onclick="location.href='https://www.linkedin.com/in/rwigle/'"
                 />
-                <img 
-                src="./assets/github.png" 
+                <img
+                src="./assets/github.png"
                 alt="My github Profile"
-                class="icon" 
+                class="icon"
                 onclick="location.href='https://github.com/Rwigie'"
                 />
-                <img 
-                src="./assets/email.png" 
+                <img
+                src="./assets/email.png"
                 alt="My github Profile"
-                class="cursor email-icon-profile" 
+                class="cursor email-icon-profile"
                 onclick="location.href='mailto:rgao727@gmail.com'"
                 />
             </div>
         </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get to know More</p>
-        <h1 class="title">About me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img 
-                src="./assets/about-pic.png" 
-                alt="Profile Picture"
-                class="about-pic"
-                />
+        <div class="about-heading">
+            <img src="./assets/profile-pic.jpg" alt="Rui’s penguin avatar" class="about-avatar">
+            <div>
+                <p class="section__text__p1">Get to know More</p>
+                <h1 class="title">About me</h1>
             </div>
+        </div>
+        <div class="section-container">
             <div class="about-details-container">
                 <div class="about-containers">
-                    
                     <div class="details-container">
-                        <img 
+                        <div class="university-logo-frame"><img src="./assets/hkust.png" alt="Hong Kong University of Science and Technology logo" class="university-logo"></div>
+                        <h3>Hong Kong University of Science and Technology</h3>
+                        <p>PhD, Computer Science<br>First-year student<br>Advisor: <a href="https://cse.hkust.edu.hk/~jhc/" target="_blank" rel="noopener noreferrer">Prof. Hao Chen</a></p>
+                    </div>
+
+                    <div class="details-container">
+                        <img
                         src="./assets/ucla.png" alt="ucla icon"
                         class="icon"
                         />
                         <h3>University of California, Los Angeles</h3>
-                        <p>2024 - Present <br />MS, Electrical and Computer Engineering <br> GPA: 4.0/4.0<p> 
+                        <p>MS, Electrical and Computer Engineering <br> GPA: 4.0/4.0<br>Advisor: <a href="https://samueli.ucla.edu/people/xiang-anthony-chen/" target="_blank" rel="noopener noreferrer">Prof. Xiang Anthony Chen</a></p>
                     </div>
                     <div class="details-container">
-                        <img 
+                        <img
                         src="./assets/Fudan.png" alt="fudan icon"
                         class="icon"
                         />
-                        <h4>Fudan University</h2>
-                        <p>2020 - 2024 <br />BS, Biomedical Engineering<br> GPA: 3.89/4.0, Ranking:1 </p> 
+                        <h3>Fudan University</h3>
+                        <p>BS, Biomedical Engineering<br> GPA: 3.89/4.0, Ranking:1 </p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p class="details-paragraph">Prior to UCLA, I started my undergraduate study at Fudan University, Shanghai in 2020, and spent 4 years at the School of Information and technology majoring in biomedical engineering and electrical engineering. During that time, I gained valuable experience in physiological signal classification and prediction under <a href="https://ieeexplore.ieee.org/author/37090017335">Prof. Yu Ma</a> and <a href="https://scholar.google.com/citations?user=g8vxMNMAAAAJ&hl=zh-CN">Prof. Cuiwei Yang</a> at <a href="https://istbi.fudan.edu.cn/">Fudan Biomedical Center</a>. It left me a solid foundation on data structure and modern techniques in signal processing. <br>My interest lies in signal processing and artificial intelligence, especially its utilization in signal processing and task prediction. I also have a keen interest in computer science, where I have taken foundational courses such as data structures and computer architecture to deepen my understanding and broaden my technical skills. </br></p>
+                    <p class="details-paragraph">My current research focuses on agentic AI for scientific discovery. Before starting my PhD at HKUST, I completed my MS in Electrical and Computer Engineering at UCLA, where I worked on molecule generation with large language models and reinforcement learning in the UCLA HCI Lab, supervised by <a href="https://samueli.ucla.edu/people/xiang-anthony-chen/" target="_blank" rel="noopener noreferrer">Prof. Xiang Anthony Chen</a> and <a href="https://sites.google.com/view/youngseung-jeon" target="_blank" rel="noopener noreferrer">Dr. Youngseung Jeon</a>.<br><br>I received my BS in Biomedical Engineering from Fudan University, where I studied from 2020 to 2024. My undergraduate research included physiological signal classification and prediction under <a href="https://ieeexplore.ieee.org/author/37090017335">Prof. Yu Ma</a> and <a href="https://scholar.google.com/citations?user=g8vxMNMAAAAJ&amp;hl=zh-CN">Prof. Cuiwei Yang</a> at the <a href="https://istbi.fudan.edu.cn/">Fudan Biomedical Center</a>.<br><br>Outside of research and studying, I enjoy playing badminton and jogging. Hong Kong is a great place for jogging, especially along the waterfront. I’m also a skilled FPS esports player (CS &gt;&gt; Val).</p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="projects" aria-labelledby="recent-work-title">
+        <h1 class="title" id="recent-work-title">Recent Work</h1>
+        <p class="work-intro"><a href="https://scholar.google.com/citations?user=gJcMluEAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
+        <ol class="publication-list">
+            <li class="publication">
+                <h2><a href="https://arxiv.org/abs/2604.23061" target="_blank" rel="noopener noreferrer">C-MORAL: Controllable Multi-Objective Molecular Optimization with Reinforcement Alignment for LLMs</a></h2>
+                <p class="publication-authors"><strong>Rui Gao</strong>, Youngseung Jeon, Swastik Roy, Morteza Ziyadi, Xiang 'Anthony' Chen</p>
+                <p class="publication-venue">arXiv preprint, 2026</p>
+            </li>
+            <li class="publication">
+                <h2><a href="https://arxiv.org/abs/2506.18915" target="_blank" rel="noopener noreferrer">Automatic Depression Assessment using Machine Learning: A Comprehensive Survey</a></h2>
+                <p class="publication-authors">Siyang Song, Yupeng Huo, Shiqing Tang, Jiaee Cheong, <strong>Rui Gao</strong>, Michel Valstar, Hatice Gunes</p>
+                <p class="publication-venue">arXiv preprint, 2025</p>
+            </li>
+            <li class="publication">
+                <h2><a href="https://www.repository.cam.ac.uk/items/b646d10c-b404-48bc-b7a3-7f777d610cdf" target="_blank" rel="noopener noreferrer">Learning Graph Representation for Predicting Student Mental Wellbeing in Robot Assisted Journal Writing Context</a></h2>
+                <p class="publication-authors">Batuhan Sayis, <strong>Rui Gao</strong>, Siyang Song, Hatice Gunes</p>
+                <p class="publication-venue">ACII Workshops and Demos, 2024</p>
+            </li>
+        </ol>
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
@@ -124,6 +145,17 @@
               <h2 class="experience-sub-title">Work or Research Experience</h2>
               <div class="article-container">
                 <article>
+                  <a href="https://hkustsmartlab.github.io/" target="_blank" rel="noopener noreferrer" class="experience-logo-link">
+                    <img src="./assets/smartx-lab.png" alt="SmartX Lab logo" class="icon">
+                  </a>
+                  <div>
+                    <h3><a href="https://hkustsmartlab.github.io/" target="_blank" rel="noopener noreferrer">SmartX Lab, HKUST</a></h3>
+                    <p>PhD Student in Computer Science · First year</p>
+                    <p>Advisor: <a href="https://cse.hkust.edu.hk/~jhc/" target="_blank" rel="noopener noreferrer">Prof. Hao Chen</a></p>
+                    <p>Research: Agentic AI for Scientific Discovery</p>
+                  </div>
+                </article>
+                <article>
                   <img
                     src="./assets/hci.jpg"
                     alt="Experience icon"
@@ -132,7 +164,7 @@
                   <div>
                     <h3>HCI Lab, UCLA</h3>
                     <p>Research Assistant</p>
-                    <p>2025 Jun - Present</p>
+                    <p>Started June 2025</p>
                     <p>Advisor: Prof. Xiang Anthony Chen <br>Dr. Youngseung Jeon</p>
                   </div>
                 </article>
@@ -145,21 +177,8 @@
                   <div>
                     <h3>AFAR Lab, Cambridge</h3>
                     <p>Research Assistant</p>
-                    <p>2023 Jun - 2024 Feb
-                    <p>Advisor: Prof. Hatice Gunes <br>Dr Batuhan Sayis</p> 
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/ucb.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>ECog Processing, UCB</h3>
-                    <p>Research Intern</p>
-                    <p>Feb 2023 - May 2023</p>
-                    <p>Advisor: PhD Runfeng Miao</p>
+                    <p>2023 Jun - 2024 Feb</p>
+                    <p>Advisor: Prof. Hatice Gunes <br>Dr Batuhan Sayis</p>
                   </div>
                 </article>
                 <article>
@@ -175,193 +194,12 @@
                     <p>Advisor: Prof.Cuiwei Yang</p>
                   </div>
                 </article>
-                
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Core Course</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div class="article-details">
-                    <h3>Digital Signal Processing</h3>
-                    <p>Grade: A</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div class="article-details">
-                    <h3>Data Structure and Algorithm</h3>
-                    <p>Grade: A</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div class="article-details">
-                    <h3>Reinforcement Learning</h3>
-                    <p>Grade: A+</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3 class="article-details">Signal and System </h3>
-                    <p>Grade:A</p>
-                  </div>
-                </article>
-                <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3 class="article-details">Machine
-                        Learning</h3>
-                      <p>Grade:A</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3 class="article-details">Analog Circuits and Digital Circuits</h3>
-                      <p>Grade:A</p>
-                    </div>
-                  </article>
+
               </div>
             </div>
           </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
       </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-              <div class ="details-container color-container">
-                <div class="article-container">
-                  <img
-                    src="./assets/molo.jpg"
-                    alt="Project 1";
-                    class="project-img"
-                    
-                  />
-                </div>
-                <h2 class="experience-sub-title project-title">Molecule Generation with LLM and RL (HCI Lab) </h2>
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                  >
-                    Link
-                  </button>
-                </div>
-              </div>
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img
-                    src="./assets/learning-paper.png"
-                    alt="Project 1";
-                    class="project-img"
-                    
-                  />
-
-                </div>
-                <h2 class="experience-sub-title project-title">Depression Prediction with GNN (AFAR Lab) </h2>
-                
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://www.repository.cam.ac.uk/items/b646d10c-b404-48bc-b7a3-7f777d610cdf'"
-                  >
-                    Link
-                  </button>
-                  
-                </div>
-              </div>
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img
-                    src="./assets/Matlab.png"
-                    alt="Project 2"
-                    class="project-img"
-                  />
-                </div>
-                <h2 class="experience-sub-title project-title">Matlab Processing ECG Signal</h2>
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/Rwigie/Matlab-ECG-signal-Processing-Common-filter-and-feature-'"
-                  >
-                    Github
-                  </button>
-                <!--
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                  >
-                    Live Demo
-                  </button>
-                -->
-                </div>
-              </div>
-              <!--
-              <div class="details-container color-container">
-                <div class="article-container">
-                  <img
-                    src="./assets/project-3.png"
-                    alt="Project 3"
-                    class="project-img"
-                  />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <div class="btn-container">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                  >
-                    Github
-                  </button>
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                  >
-                    Live Demo
-                  </button>
-                
-                </div>
-            -->
-              </div>
-            </div>
-          </div>
-        <img 
-        src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-    </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -372,18 +210,18 @@
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linken.com">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/rwigle/">LinkedIn</a></p>
             </div>
-        </div> 
+        </div>
     </section>
     <footer>
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Recent Work</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
