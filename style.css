@@ -53,6 +53,7 @@ article { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 32px;
 article + article { border-top: 1px solid #e5e7eb; }
 article .icon { display: block; width: 120px; height: 96px; object-fit: contain; cursor: default; }
 .experience-logo-link { display: block; }
+#recent-work-title { font-size: 1.5rem; }
 .work-intro { margin-top: -8px; margin-bottom: 20px; }
 .publication-list { list-style: none; }
 .publication { padding-block: 24px; overflow-wrap: anywhere; }
