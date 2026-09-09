@@ -39,6 +39,7 @@ body > nav { justify-content: space-between; min-height: 100px; gap: 24px; }
 .btn { padding: 12px 20px; border: 1px solid #444; border-radius: 24px; font: inherit; font-size: 0.9rem; cursor: pointer; background: white; }
 .btn-color-1, .btn:hover { color: white; background: #333; }
 .icon, .email-icon-profile { width: 30px; height: 30px; object-fit: contain; cursor: pointer; }
+.social-icon-link { display: inline-flex; width: 30px; height: 30px; }
 .section-container { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 40px; align-items: start; }
 .about-pic { width: 180px; height: 180px; object-fit: contain; border-radius: 50%; }
 .about-details-container { min-width: 0; }
@@ -54,12 +55,14 @@ article { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 32px;
 article + article { border-top: 1px solid #e5e7eb; }
 article .icon { display: block; width: 120px; height: 96px; object-fit: contain; cursor: default; }
 .experience-logo-link { display: block; }
-#recent-work-title { font-size: 1.5rem; }
 .work-intro { margin-top: -8px; margin-bottom: 20px; }
-.publication-list { list-style: none; }
-.publication { padding-block: 24px; overflow-wrap: anywhere; }
+.publication-list { list-style: none; max-width: 860px; margin-inline: 0; text-align: left; }
+.publication { padding-block: 16px; overflow-wrap: anywhere; }
 .publication + .publication { border-top: 1px solid #e5e7eb; }
-.publication h2 { font-size: 1.15rem; line-height: 1.5; font-weight: 600; margin-bottom: 8px; }
+.publication h2 { font-size: 1rem; line-height: 1.5; font-weight: 600; margin-bottom: 4px; }
+.publication-authors, .publication-venue { font-size: 0.9rem; }
+.publication-code-link { display: inline-flex; width: 24px; height: 24px; align-items: center; justify-content: center; vertical-align: middle; }
+.publication-code-link img { width: 18px; height: 18px; object-fit: contain; }
 .publication-authors strong { color: #222; }
 .publication-venue { margin-top: 4px; font-style: italic; }
 .contact-info-upper-container { display: flex; flex-wrap: wrap; gap: 24px; }
